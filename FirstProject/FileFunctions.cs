@@ -74,7 +74,9 @@ namespace FirstProject
             {
                 using StreamWriter sw = new(filePath, false, System.Text.Encoding.Default);
                 foreach (string str in list)
+                {
                     sw.WriteLine(str);
+                }
             }
             catch (Exception e)
             {
